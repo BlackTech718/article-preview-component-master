@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Manrope',sans-serif;
+}
+
+body {
+  padding: 20% 0%;
+  background-color: #ecf2f8;
+}
+
+#grid-container {
+  display: -ms-grid;
+  display: grid;
+  max-width: 80%;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "grid-container__pic" "grid-container__content" "grid-container__contact-social";
+  border-radius: 5%;
+  background-color: #fff;
+}
+
+#grid-container .grid-container__pic {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: grid-container__pic;
+  padding-bottom: 25px;
+}
+
+#grid-container .grid-container__pic img {
+  max-width: 100%;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+}
+
+#grid-container .grid-container__content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: grid-container__content;
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+#grid-container .grid-container__content .grid-container__heading {
+  padding-bottom: 20px;
+  font-size: 21px;
+  color: #48556a;
+}
+
+#grid-container .grid-container__content .grid-container__heading h1 {
+  font-weight: 700;
+}
+
+#grid-container .grid-container__content .grid-container__main-content p {
+  font-size: 12;
+  line-height: 25px;
+}
+
+#grid-container .grid-container__contact {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px;
+}
+
+#grid-container .grid-container__contact img {
+  max-width: 20%;
+  border-radius: 50%;
+}
+
+#grid-container .grid-container__contact .grid-container__contact-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto 0 auto 0;
+  padding: 0px 15px;
+}
+
+#grid-container .grid-container__contact .grid-container__contact-detail h5 {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+#grid-container .grid-container__contact .grid-container__contact-detail p {
+  font-size: 13px;
+  color: #6d7f97;
+}
+
+#grid-container .grid-container__contact .grid-container__share-btn {
+  background-color: #9eafc2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0 auto 0;
+}
+
+#grid-container .grid-container__contact .grid-container__share-btn.grid-container__share-btn:hover {
+  cursor: pointer;
+}
+
+#grid-container .grid-container__contact .grid-container__share-btn img {
+  max-width: 100%;
+}
+
+#grid-container .grid-container__social {
+  background-color: #48556a;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: grid-container__contact-social;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0% 10%;
+}
+
+#grid-container .grid-container__social p {
+  color: #fff;
+}
+
+#grid-container .grid-container__social a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+#grid-container .grid-container__social .grid-container__share-btn {
+  background-color: #9eafc2;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0 auto auto;
+}
+
+#grid-container .grid-container__social .grid-container__share-btn.grid-container__share-btn:hover {
+  cursor: pointer;
+}
+
+#grid-container .grid-container__social .grid-container__share-btn img {
+  max-width: 100%;
+}
+
+#grid-container .open .grid-container__social {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
