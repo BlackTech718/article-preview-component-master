@@ -4,6 +4,9 @@ var share_box = document.getElementsByClassName("grid-container__social")[0];
 var contact_box = document.getElementsByClassName("grid-container__contact")[0];
 var share_small = document.getElementsByClassName("grid-container__share-btn")[1]
 
+
+
+
 share_btn.addEventListener('click',function(){
     if(contact_box.classList.contains('close')){
         contact_box.classList.remove('close');
