@@ -170,7 +170,99 @@ body {
   max-width: 100%;
 }
 
-#grid-container .open .grid-container__social {
+#grid-container .close {
   display: none;
+}
+
+#grid-container .open {
+  display: flexbox;
+}
+
+@media (min-width: 768px) {
+  #grid-container {
+    display: -ms-grid;
+    display: grid;
+    max-width: 50%;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "grid-container__pic grid-container__content" ". grid-container__social";
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+    max-height: 375px;
+  }
+  #grid-container .grid-container__pic {
+    max-height: 375px;
+  }
+  #grid-container .grid-container__content {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: grid-container__content;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #grid-container .grid-container__content .grid-container__heading {
+    color: #48556a;
+  }
+  #grid-container .grid-container__content .grid-container__heading h1 {
+    font-weight: 700;
+  }
+  #grid-container .grid-container__content .grid-container__main-content p {
+    font-size: 12;
+    line-height: 25px;
+  }
+  #grid-container .grid-container__content .grid-container__contact {
+    max-width: 100%;
+    max-height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 0px;
+  }
+  #grid-container .grid-container__content .grid-container__contact img {
+    max-width: 20%;
+    border-radius: 50%;
+  }
+  #grid-container .grid-container__content .grid-container__contact .grid-container__contact-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #grid-container .grid-container__content .grid-container__contact .grid-container__contact-detail h5 {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  #grid-container .grid-container__content .grid-container__contact .grid-container__contact-detail p {
+    font-size: 13px;
+    color: #6d7f97;
+  }
+  #grid-container .grid-container__content .grid-container__contact .grid-container__share-btn {
+    background-color: #9eafc2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto 0 auto 0;
+  }
+  #grid-container .grid-container__content .grid-container__contact .grid-container__share-btn.grid-container__share-btn:hover {
+    cursor: pointer;
+  }
+  #grid-container .grid-container__content .grid-container__contact .grid-container__share-btn img {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
