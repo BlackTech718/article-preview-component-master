@@ -13,10 +13,21 @@ $LightGrayishBlue: hsl(210, 46%, 95%);
     font-family: 'Manrope',sans-serif;
 }
 // Utilities
-// .open{
-//     .grid-container__social{
-//         display:flexbox;
-//     }
+.open{
+    .grid-container__social{
+        display:flexbox;
+    }
+}
+// .arrow{
+//     width:0px;
+//     height:0px;
+//     position: absolute;
+//     z-index: 2;
+//     top:425px;
+//     right:520px;
+//     border-left:10px solid transparent;
+//     border-right: 10px solid transparent;
+//     border-top: 20px solid $VeryDarkGrayishBlue;
 // }
 
 // Body Defaults
@@ -157,92 +168,120 @@ body{
 
 // Media Query Desktop Max 1400px
 @media(min-width:768px){
+    // Whole Container
     #grid-container{
         display:grid;
-        max-width:50%;
-        width:50%;
+        max-width: 50%;
         margin: 0 auto 0 auto;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
         grid-template-areas:
         "grid-container__pic grid-container__content"
-        ". grid-container__social"
+        "grid-container__pic grid-container__contact-social"
         ;
-        height:220px;
-        overflow: hidden;
-        border-radius: 10px;
-        max-height:375px;
+        border-radius: 5%;
+        background-color:#fff;
+        gap:10px;
+        // picture container
         .grid-container__pic{
-            max-height: 375px;
-            
-        }
-            // Content Container
-    .grid-container__content{
-        grid-area:grid-container__content;
-        //margin: 0 auto 0 auto;
-        // Header Container
-        max-width:100%;
-        max-height: 100%;
-        .grid-container__heading{
-            //padding-bottom: 20px;
-           // font-size:21px;
-            color:$VeryDarkGrayishBlue;
-            h1{
-                font-weight: 700;
-            }
-        }
-        .grid-container__main-content{
-            p{
-                font-size:12;
-                line-height:25px;
-            }
-            
-        }
-           //  Contact Container
-    .grid-container__contact{
-        max-width: 100%;
-        max-height: 20%;
-        display: flex;
-        img{
-            max-width:20%;
-            border-radius: 50%;
-        }
-        padding: 20px 0px;
-        // Contact Detail Container
-        .grid-container__contact-detail{
-            display:flex;
-            flex-direction:column;
-           // margin:auto 0 auto 0;
-           // padding: 0px 15px;
-            h5{
-                font-size:16px;
-                padding-bottom: 5px;
-            }
-            p{
-                font-size:13px;
-                color:$DesaturatedDarBlue;
-            }
-        }
-        // Share Button Container
-        .grid-container__share-btn{
-            background-color: $GrayishBlue;
-            width:50px;
-            height:50px;
-            border-radius: 50%;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            margin:auto 0 auto 0;
-
-            &.grid-container__share-btn:hover{
-                cursor: pointer;
-            }
+            grid-area: grid-container__pic;
             img{
-               max-width: 100%;
+                max-width:100%;
+                max-height: 100%;
             }
         }
+        // Content Container
+        .grid-container__content{
+            grid-area: grid-container__content;
+            padding-top: 15px;
+            padding-right: 5px;
+            // Child Header
+            .grid-container__heading{
+                font-size: 14px;
+                color:$VeryDarkGrayishBlue;
+            }
+            // Child Main Content
+            .grid-container__main-content{
+                p{ font-size: 14px; line-height: 20px;}
+            }
+        }
+        // Contact Container
+        .grid-container__contact{
+            display:flex;
+            // Img Child
+            img{max-width: 15%; padding-right: 10px; border-radius: 50%;}
+            // Contact Detail Container
+            .grid-container__contact-detail{
+                display:flex;
+                flex-direction: column;
+                margin: auto 0px auto 0px;
+                padding:0px 15px;
+                // Child H5
+                h5{ font-size:14px; padding-bottom:5px;}
+                // Child P
+                p{font-size:12px; color:$DesaturatedDarBlue;}
+            }
+            .grid-container__share-btn{
+                width:25px;
+                height:25px;
+                border-radius: 50%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{cursor: pointer;}
+                // Child Img
+                img{width: 100%;}
+    
+            }
+        }
+        // Social Container
+        .grid-container__social{
+            background-color:$VeryDarkGrayishBlue;
+            grid-area:grid-container__contact-social;
+            display:flex;
+            align-items: center;
+            padding:0% 0%;
+            position: absolute;
+            top:375px;
+            right:500PX;
+            width:250px;
+            padding:5px;
+            border-radius: 100px 100px 100px 100px;
+            // Child P element
+            p{color:#fff;}
+            // Child A element
+            a{padding:10px; display:block; text-decoration:none;}
+            // Share Button Container Child of Social
+            .grid-container__share-btn{
+                background-color: $GrayishBlue;
+                width:25px;
+                height:25px;
+                border-radius: 50%;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                margin:0px;
+                
+            }
+            
+        }
+        .close{
+            display:none;
+        }
+        .open{
+            display:flexbox;
+        }
+        .arrow{
+            width:0px;
+            height:0px;
+            position: absolute;
+            z-index: 2;
+            top:425px;
+            right:520px;
+            border-left:10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 20px solid $VeryDarkGrayishBlue;
+        }
+        
     }
-    }
-    // Container End
-    }
-    // End Of Media Query.
 }
+
