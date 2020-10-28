@@ -191,9 +191,10 @@ body {
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
         grid-template-areas: "grid-container__pic grid-container__content" "grid-container__pic grid-container__contact-social";
+    height: 175px;
     border-radius: 5%;
     background-color: #fff;
-    gap: 10px;
+    gap: 0px;
   }
   #grid-container .grid-container__pic {
     -ms-grid-row: 1;
@@ -202,8 +203,7 @@ body {
     grid-area: grid-container__pic;
   }
   #grid-container .grid-container__pic img {
-    max-width: 100%;
-    max-height: 100%;
+    height: 150px;
   }
   #grid-container .grid-container__content {
     -ms-grid-row: 1;
@@ -219,6 +219,11 @@ body {
   #grid-container .grid-container__content .grid-container__main-content p {
     font-size: 14px;
     line-height: 20px;
+  }
+  #grid-container .grid-container__contact-social {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: grid-container__contact-social;
   }
   #grid-container .grid-container__contact {
     display: -webkit-box;
