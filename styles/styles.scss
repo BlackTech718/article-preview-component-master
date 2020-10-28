@@ -13,11 +13,17 @@ $LightGrayishBlue: hsl(210, 46%, 95%);
     font-family: 'Manrope',sans-serif;
 }
 // Utilities
-.open{
-    .grid-container__social{
-        display:flexbox;
-    }
-}
+// .open{
+//     .grid-container__social{
+//         display:flexbox;
+//     }
+//     .arrow{
+//         display:block;
+//     }
+//     .grid-container__contact{
+//         display:none;
+//     }
+// }
 // .arrow{
 //     width:0px;
 //     height:0px;
@@ -162,6 +168,16 @@ body{
     }
     .open{
         display:flexbox;
+        // Test Code
+        //.grid-container__social{
+        //    display:flexbox;
+        //}
+       // .arrow{
+       //     display:block;
+       // }
+       // .grid-container__contact{
+       //     display:none;
+       // }l
     }
     // End Grid Container
 }
@@ -179,21 +195,23 @@ body{
         "grid-container__pic grid-container__contact-social"
         ;
         height: 175px;
-        border-radius: 5%;
+        border-radius: 3%;
         background-color:#fff;
         gap:0px;
         // picture container
         .grid-container__pic{
             grid-area: grid-container__pic;
+            padding:0px;
             img{
                 //max-width:100%;
                 height: 150px;
+                padding:0px;
             }
         }
         // Content Container
         .grid-container__content{
             grid-area: grid-container__content;
-            padding-top: 15px;
+            //padding-top: 15px;
             padding-right: 5px;
             // Child Header
             .grid-container__heading{
@@ -202,14 +220,16 @@ body{
             }
             // Child Main Content
             .grid-container__main-content{
-                p{ font-size: 14px; line-height: 20px;}
+                p{ font-size: 14px; line-height: 15px; padding:0px;}
             }
         }
         // Contact Container
         .grid-container__contact-social{
             grid-area:grid-container__contact-social;
+            padding:0px;
         }
         .grid-container__contact{
+            padding:0px;
             display:flex;
             // Img Child
             img{max-width: 15%; padding-right: 10px; border-radius: 50%;}
@@ -217,12 +237,12 @@ body{
             .grid-container__contact-detail{
                 display:flex;
                 flex-direction: column;
-                margin: auto 0px auto 0px;
-                padding:0px 15px;
+                //margin: auto 0px auto 0px;
+                //padding:0px 15px;
                 // Child H5
-                h5{ font-size:14px; padding-bottom:5px;}
+                h5{ font-size:12px; padding-bottom:0px;}
                 // Child P
-                p{font-size:12px; color:$DesaturatedDarBlue;}
+                p{font-size:10px; color:$DesaturatedDarBlue; padding:0px; line-height: auto;}
             }
             .grid-container__share-btn{
                 width:25px;
@@ -287,5 +307,19 @@ body{
         }
         
     }
+    // Test Code
+    // .open{
+    //     //display:flexbox;
+    //     // Test Code
+    //     .grid-container__social{
+    //         display:flexbox;
+    //     }
+    //     .arrow{
+    //         display:block;
+    //     }
+    //     .grid-container__contact{
+    //         display:none;
+    //     }
+    // }
 }
 
