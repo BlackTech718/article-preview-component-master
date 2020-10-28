@@ -187,7 +187,6 @@ body {
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
         grid-template-areas: "grid-container__pic grid-container__content" "grid-container__pic grid-container__contact-social";
-    height: 175px;
     border-radius: 3%;
     background-color: #fff;
     gap: 0px;
@@ -200,7 +199,6 @@ body {
     padding: 0px;
   }
   #grid-container .grid-container__pic img {
-    height: 150px;
     padding: 0px;
   }
   #grid-container .grid-container__content {
@@ -214,7 +212,7 @@ body {
     color: #48556a;
   }
   #grid-container .grid-container__content .grid-container__main-content p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 15px;
     padding: 0px;
   }
@@ -252,7 +250,7 @@ body {
     font-size: 10px;
     color: #6d7f97;
     padding: 0px;
-    line-height: auto;
+    line-height: 15px;
   }
   #grid-container .grid-container__contact .grid-container__share-btn {
     width: 25px;
