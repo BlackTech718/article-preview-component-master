@@ -188,51 +188,54 @@ body{
     #grid-container{
         display:grid;
         max-width: 50%;
+        height:213px;
+        max-height:190px;
         margin: 0 auto 0 auto;
         grid-template-columns: 1fr 2fr;
         grid-template-areas:
         "grid-container__pic grid-container__content"
         "grid-container__pic grid-container__contact-social"
         ;
-       // height: 175px;
         border-radius: 3%;
         background-color:#fff;
         gap:0px;
+       // margin-bottom:100%;
         // picture container
         .grid-container__pic{
             grid-area: grid-container__pic;
-            padding:0px;
+
             img{
-                //max-width:100%;
+                max-width:100%;
                 //height: 150px;
                 padding:0px;
+                border-radius: 0px;
             }
         }
         // Content Container
         .grid-container__content{
             grid-area: grid-container__content;
-            //padding-top: 15px;
-            padding-right: 5px;
             // Child Header
             .grid-container__heading{
+                padding-top:10px;
                 font-size: 14px;
                 color:$VeryDarkGrayishBlue;
             }
             // Child Main Content
             .grid-container__main-content{
-                p{ font-size: 12px; line-height: 15px; padding:0px;}
+                p{ font-size: 12px; line-height: 19px; padding:0px;}
             }
         }
         // Contact Container
         .grid-container__contact-social{
             grid-area:grid-container__contact-social;
-            padding:0px;
+            padding-top:15px;
         }
         .grid-container__contact{
             padding:0px;
             display:flex;
-            // Img Child
-            img{max-width: 15%; padding-right: 10px; border-radius: 50%;}
+            .girl{
+                max-width:10%
+            }
             // Contact Detail Container
             .grid-container__contact-detail{
                 display:flex;
@@ -247,13 +250,9 @@ body{
             .grid-container__share-btn{
                 width:25px;
                 height:25px;
-                border-radius: 50%;
                 display:flex;
-                justify-content: center;
-                align-items: center;
-                &:hover{cursor: pointer;}
-                // Child Img
-                img{width: 100%;}
+                position: absolute;
+                left:70%;
     
             }
         }
@@ -263,17 +262,19 @@ body{
             grid-area:grid-container__contact-social;
             display:flex;
             align-items: center;
-            padding:0% 0%;
+            justify-content: space-between;
             position: absolute;
-            top:375px;
-            right:500PX;
-            width:250px;
-            padding:5px;
-            border-radius: 100px 100px 100px 100px;
+            top:19%;
+            right:28%;
+            width:200px;
+            padding:10px;
+            height:50px;
+            border-radius: 10px 10px 10px 10px;
+            z-index: 2;
             // Child P element
-            p{color:#fff;}
+            p{color:#fff;padding-right: 15px;padding-left:15px;}
             // Child A element
-            a{padding:10px; display:block; text-decoration:none;}
+            a{padding-right:0px; display:block; text-decoration:none;}
             // Share Button Container Child of Social
             .grid-container__share-btn{
                 background-color: $GrayishBlue;
@@ -283,7 +284,8 @@ body{
                 display:flex;
                 justify-content: center;
                 align-items:center;
-                margin:0px;
+                margin-left:30px;
+                display:none;
                 
             }
             
@@ -298,9 +300,9 @@ body{
             width:0px;
             height:0px;
             position: absolute;
-            z-index: 2;
-            top:425px;
-            right:520px;
+            z-index: 0;
+            top:21.5%;
+            right:28.5%;
             border-left:10px solid transparent;
             border-right: 10px solid transparent;
             border-top: 20px solid $VeryDarkGrayishBlue;

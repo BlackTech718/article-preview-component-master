@@ -51,6 +51,6 @@ function myFunction(x) {
     }
 }
 var x = window.matchMedia("(min-width: 700px)")
-myFunction(x) // Call listener function at run time
+myFunction(x) // Call  function 
 x.addListener(myFunction) // Attach listener function on state changes
 
