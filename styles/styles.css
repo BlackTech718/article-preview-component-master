@@ -178,7 +178,7 @@ body {
   display: flexbox;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   #grid-container {
     display: -ms-grid;
     display: grid;
@@ -276,7 +276,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: absolute;
-    top: 19%;
+    top: 365px;
     right: 28%;
     width: 200px;
     padding: 10px;
@@ -322,8 +322,8 @@ body {
     height: 0px;
     position: absolute;
     z-index: 0;
-    top: 21.5%;
-    right: 28.5%;
+    top: 410px;
+    right: 406px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 20px solid #48556a;
