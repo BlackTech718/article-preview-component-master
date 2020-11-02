@@ -183,13 +183,13 @@ body{
 }
 
 // Media Query Desktop Max 1400px
-@media(min-width:1440px){
+@media screen and (min-width:400px) and (max-width: 1440px) {
     // Whole Container
     #grid-container{
         display:grid;
         max-width: 50%;
-        height:213px;
-        max-height:190px;
+        max-height:fit-content;
+        //max-height:190px;
         margin: 0 auto 0 auto;
         grid-template-columns: 1fr 2fr;
         grid-template-areas:
@@ -205,8 +205,7 @@ body{
             grid-area: grid-container__pic;
 
             img{
-                max-width:100%;
-                //height: 150px;
+               // max-width:100%;
                 padding:0px;
                 border-radius: 0px;
             }
@@ -216,7 +215,7 @@ body{
             grid-area: grid-container__content;
             // Child Header
             .grid-container__heading{
-                padding-top:10px;
+                padding-top:7px;
                 font-size: 14px;
                 color:$VeryDarkGrayishBlue;
             }

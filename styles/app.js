@@ -50,7 +50,7 @@ function myFunction(x) {
         });
     }
 }
-var x = window.matchMedia("(min-width: 1440px)")
+var x = window.matchMedia("(min-width: 400px)")
 myFunction(x) // Call  function 
 x.addListener(myFunction) // Attach listener function on state changes
 
