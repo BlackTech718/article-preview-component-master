@@ -8,23 +8,40 @@ var arrow = document.getElementsByClassName('arrow')[0];
 function myFunction(x) {
     if (x.matches) { // If media query matches
      share_btn.addEventListener('click',function(){
-        if(share_box.classList.contains('close')){
+        if( share_box.classList.contains('close')){
             share_box.classList.remove('close');
             arrow.classList.remove('close');
+            contact_box.classList.add('close');
         }else{
             share_box.classList.add('close');
             arrow.classList.add('close');
+            contact_box.classList.remove('close')
         }
     });
+
+
+
+
+
+
+
+
      share_small.addEventListener('click',function(){
         if(share_box.classList.contains('close')){
             share_box.classList.remove('close');
             arrow.classList.remove('close');
+            contact_box.classList.add('close')
         }else{
             share_box.classList.add('close');
             arrow.classList.add('close');
         }
-    });   
+    }); 
+    
+    
+
+
+
+    
     } else {
         share_btn.addEventListener('click',function(){
             if(contact_box.classList.contains('close')){
