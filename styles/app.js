@@ -11,37 +11,20 @@ function myFunction(x) {
         if( share_box.classList.contains('close')){
             share_box.classList.remove('close');
             arrow.classList.remove('close');
-            contact_box.classList.add('close');
         }else{
             share_box.classList.add('close');
             arrow.classList.add('close');
-            contact_box.classList.remove('close')
         }
     });
-
-
-
-
-
-
-
-
      share_small.addEventListener('click',function(){
         if(share_box.classList.contains('close')){
             share_box.classList.remove('close');
             arrow.classList.remove('close');
-            contact_box.classList.add('close')
         }else{
             share_box.classList.add('close');
             arrow.classList.add('close');
         }
     }); 
-    
-    
-
-
-
-    
     } else {
         share_btn.addEventListener('click',function(){
             if(contact_box.classList.contains('close')){
@@ -52,6 +35,8 @@ function myFunction(x) {
                 contact_box.classList.add('close');
                 share_box.classList.remove('close');
                 arrow.classList.remove('close');
+                
+
             }
         });
         share_small.addEventListener('click',function(){
